@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script type='text/javascript' src="aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-torus position='5 3 -5' color='#00ff00' radius='1' rotation="0 0 0"
+                animation="property: color; from:green; to: #0000ff; dur: 4000; easing: linear; loop: true"
+                animation__2="property: rotation; to: 360 0 360; loop: true; dur: 10000"
+            >
+            </a-torus>
+            <a-plane src='https://i.picsum.photos/id/1045/3936/2624.jpg' width='50' height='5' rotation='-55 0 0 ' position='-2 -2 -5' ></a-plane>
+            <a-cylinder color='yellow' height='2' radius='0.05'  position='3 3 -5'></a-cylinder>
+            <a-cylinder color='blue' height='2' radius='0.05'  position='7 3 -5'></a-cylinder>
+            <a-torus-knot position='-2 3 -5' color='#fff00f' radius='1.2'
+                rotation="0 0 0"
+                animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
+                animation__2="property: color; from:#ff000f; to: #ff00ff; loop: true; dur: 10000; easing: linear;"
+            >
+
+            </a-torus-knot>
+            <a-sky color="black"></a-sky>
+
+            <a-plane width='10' height='3.5' position='2 1 -8'
+            src='https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/bricks/brick_diffuse.jpg' ></a-plane>
+            <a-text value='welcome to fun house' color='black' width='10' position='-0.5 1 -6'></a-text>
+        </a-scene>
+    </body>
+</html>
